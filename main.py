@@ -17,6 +17,9 @@ class Employee(BaseModel):
     department: str
     imageid : str
 
+class ImageIDRequest(BaseModel):
+    image_id: str
+
 class Attendance(BaseModel):
     employee_id: int
     employee_name : str
@@ -48,6 +51,31 @@ def register_employee(employee: Employee):
     conn.close()
     return {"status": "success", "message": "Employee registered"}
 
+# Endpoint for employee details
+@app.post("/employee_details/")
+def fetch_employee_details(imageidrequest: ImageIDRequest):
+  conn = get_db_connection()
+  cursor = conn.cursor()
+  image_id = imageidrequest.image_id
+  try:
+    cursor.execute("SELECT ID, Name, Position, Department FROM Employees WHERE ImageID=?", (image_id,))
+    result = cursor.fetchone()
+
+    if result:
+      return {
+        "status": "success",
+        "id": result[0],
+        "name": result[1],
+        "position": result[2],
+        "department": result[3]
+      }
+    else:
+      raise HTTPException(status_code=404, detail="Employee not found")
+  except (sqlite3.Error, Exception) as e:  # Catch both sqlite and generic exceptions
+    raise HTTPException(status_code=500, detail=f"An error occurred: {str(e)}")
+  finally:
+    conn.close()
+
 # Endpoint to get the count of employees
 @app.get("/employees_count")
 def get_employee_count():
@@ -57,6 +85,26 @@ def get_employee_count():
     count = cursor.fetchone()[0]
     conn.close()
     return {"count": count}
+
+# Endpoint to get all employee
+@app.get("/all_employee")
+def get_all_employee():
+    conn = get_db_connection()
+    cursor = conn.cursor()
+    cursor.execute('SELECT * FROM Employees')
+    select = cursor.fetchall()
+    conn.close()
+    return select
+
+# Endpoint to get all attendance
+@app.get("/all_attendance")
+def get_all_attendance():
+    conn = get_db_connection()
+    cursor = conn.cursor()
+    cursor.execute('SELECT * FROM Attendance')
+    select = cursor.fetchall()
+    conn.close()
+    return select
 
 # Endpoint to record attendance
 @app.post("/attendance")
