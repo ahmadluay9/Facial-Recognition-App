@@ -296,9 +296,23 @@ To record employee attendance:
 
 2. Next, employees should click the 'take photo' button.
 
-3. When the 'take a photo' button is clicked, Streamlit will send the data to the API for the model to perform face recognition (`POST /predict/image`) and record the attendance in the database (`POST /attendance`).
+3. When the 'take a photo' button is clicked, Streamlit will send the data to the API for the model to perform face recognition (`POST /predict/image`) and record the attendance in the Attendance table in the database (`POST /attendance`).
    
 ### 2. Register new employee
+
+![Register-ezgif com-video-to-gif-converter](https://github.com/ahmadluay9/Facial-Recognition-App/assets/123846438/a8071931-1e4d-49ad-8355-c2f8835e98be)
+
+To register new employees:
+
+1. Employees can click "Register" and then enter their name, position, and department.
+
+2. Next, employees should take two photos. The first photo will be saved to the folder `Face Images/Train/{ID_Employee_Name}.jpg`, and the second photo will be saved to the folder `Face Images/Test/{ID_Employee_Name}.jpg`. These two photos will be used to retrain the existing model.
+
+3. Finally, employees should click the "Register" button. When the "Register" button is clicked, Streamlit will send the data to the API to add the data to the Employee table in the database (`/POST /register`) and also record the attendance in the Attendance table in the database (`/POST /attendance`).
+
+
+
+
 
 
 
