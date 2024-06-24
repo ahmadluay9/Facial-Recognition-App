@@ -3,22 +3,22 @@
 This application helps company track when employees arrive and leave work. This application Utilizes facial recognition technology for employee identification through a trained deep learning model built using TensorFlow. 
 
 ## Setup
-1. Clone this repository
+### 1. Clone this repository
 ```
 git clone https://github.com/ahmadluay9/Facial-Recognition-App.git
 ```
 
-2. Change the directory to `Facial-Recognition-App`
+### 2. Change the directory to `Facial-Recognition-App`
 ```
 cd Facial-Recognition-App
 ```
 
-3. Create virtual environment
+### 3. Create virtual environment
 ```
 python -m venv my_env
 ```
 
-4. Activating the virtual environment
+### 4. Activating the virtual environment
 
 **For Windows**
  ```bash
@@ -29,28 +29,28 @@ python -m venv my_env
  source my_env/bin/activate
  ```
 
-5. Install package from requirements.txt
+### 5. Install package from requirements.txt
 **For Windows**
 ```bash
 pip install -r requirements.txt
 ```
 
-6. Change the directory to `fastapi`
+### 6. Change the directory to `fastapi`
 ```
 cd fastapi
 ```
 
-7. Run `fastapi` framework
+### 7. Run `fastapi` framework
 ```
 uvicorn main:app --reload
 ```
 
-8. Change the directory to `streamlit`
+### 8. Change the directory to `streamlit`
 ```
 cd streamlit
 ```
 
-9. Run `streamlit`
+### 9. Run `streamlit`
 ```
 streamlit run app.py
 ```
