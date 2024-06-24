@@ -5,7 +5,6 @@ from io import BytesIO
 from datetime import datetime
 import sys
 
-from predicts import *
 from utils import *
 
 # Set the default encoding to UTF-8

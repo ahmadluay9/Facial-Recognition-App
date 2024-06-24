@@ -1,7 +1,6 @@
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 import sqlite3
-import numpy as np
 from datetime import time
 
 from predicts import *
