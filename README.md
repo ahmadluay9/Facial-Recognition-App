@@ -2,6 +2,32 @@
 
 This application helps company track when employees arrive and leave work. This application Utilizes facial recognition technology for employee identification through a trained deep learning model built using TensorFlow. 
 
+## Setup
+1. Clone this repository
+```
+git clone https://github.com/ahmadluay9/Facial-Recognition-App.git
+```
+2. Change the directory to `Facial-Recognition-App`
+```
+cd Facial-Recognition-App
+```
+3. Change the directory to `fastapi`
+```
+cd fastapi
+```
+4. Run `fastapi` framework
+```
+uvicorn main:app --reload
+```
+5. Change the directory to `streamlit`
+```
+cd streamlit
+```
+6. Run `streamlit`
+```
+streamlit run app.py
+```
+
 ---
 
 # File Explanation
