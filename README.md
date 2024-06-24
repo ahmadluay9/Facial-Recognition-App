@@ -295,7 +295,7 @@ To record employee attendance:
 
 2. Next, employees should click the 'take photo' button. The photo will be save to the folder `Face Images/Attendance Tracker/`
 
-3. When the 'take a photo' button is clicked, Streamlit will send the data to the server for the model to perform face recognition (`POST /predict/image`) and record the attendance in the Attendance table in the database (`POST /attendance`).
+3. When the 'take a photo' button is clicked, Streamlit will send the data to the server for the model to perform face recognition (`POST /predict/image`) and record the attendance in the Attendance table in the database (`POST /attendance` or `POST /attendance/checkout`).
    
 ### 2. Register new employee
 
