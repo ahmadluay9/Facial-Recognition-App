@@ -156,11 +156,11 @@ dmypy.json
 # Cython debug symbols
 cython_debug/
 
+inference.ipynb
 /~
 /facerecognition
 =3.10
 /Airflow
-
 
 # PyCharm
 #  JetBrains specific template is maintained in a separate JetBrains.gitignore that can
