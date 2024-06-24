@@ -29,7 +29,7 @@ python -m venv my_env
  source my_env/bin/activate
  ```
 
-### 5. Install package from requirements.txt
+### 5. Install package from `requirements.txt`
 ```bash
 pip install -r requirements.txt
 ```
