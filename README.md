@@ -322,8 +322,11 @@ To access the database:
 
 3. When the 'Login' button is clicked, Streamlit will send a request to the server to retrieve the data requested by the user (`/GET /all_attendance` or `/GET /all_employee`).
 
+---
 
+DataOps
 
+The next step is to create an end-to-end data pipeline that manages the flow of data from the source to a facial recognition system and handles the addition of new users or new faces to the system. The pipeline will be built using an orchestration tool like Apache Airflow. However, due to computational constraints, it may be necessary to rerun the model_training.ipynb file.
 
 
 
