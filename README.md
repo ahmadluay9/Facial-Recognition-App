@@ -77,5 +77,24 @@ This repository consists of several files :
 
 - `requirements.txt`: A file listing the project's dependencies. It is used by pip to install all the necessary packages specified in this file.
 
+# Libraries
+
+Libraries used for this project:
+
+- **FastAPI**: A high-performance web framework for building APIs in Python.
+
+- **Streamlit**: A framework for building data apps in Python.
+
+- **sqlite3**: The standard Python library for accessing SQLite databases.
+
+- **TensorFlow**: This project uses TensorFlow for tasks related to the facial recognition model, such as model definition, training, and making predictions.
+
+- **opencv-python**: This project uses OpenCV for pre-processing facial images (e.g., resizing, normalization) and for other computer vision tasks needed for the model or application.
+
+- **matplotlib**: This project use matplotlib to visualize attendance data and model performance metrics.
+
+- **pandas**: This project use pandas for data manipulation, cleaning, and analysis related to attendance tracking.
+
+- **numpy**: This project use numpy for or numerical computations related to the facial recognition model or data analysis tasks.
 
 
