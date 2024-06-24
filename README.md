@@ -233,7 +233,7 @@ The image shows two plots that evaluate the performance of a Sequential model on
 - Y-axis: Loss
 
 - Blue Line: Training loss
-- 
+  
 - Orange Line: Validation loss
   
 **interpretation**:
