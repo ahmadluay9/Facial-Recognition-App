@@ -7,23 +7,50 @@ This application helps company track when employees arrive and leave work. This 
 ```
 git clone https://github.com/ahmadluay9/Facial-Recognition-App.git
 ```
+
 2. Change the directory to `Facial-Recognition-App`
 ```
 cd Facial-Recognition-App
 ```
-3. Change the directory to `fastapi`
+
+3. Create virtual environment
+```
+python -m venv my_env
+```
+
+4. Activating the virtual environment
+
+**For Windows**
+ ```bash
+ my_env\Scripts\activate.bat
+ ```
+**For macOS and Linux**
+ ```bash
+ source my_env/bin/activate
+ ```
+
+5. Install package from requirements.txt
+**For Windows**
+```bash
+pip install -r requirements.txt
+```
+
+6. Change the directory to `fastapi`
 ```
 cd fastapi
 ```
-4. Run `fastapi` framework
+
+7. Run `fastapi` framework
 ```
 uvicorn main:app --reload
 ```
-5. Change the directory to `streamlit`
+
+8. Change the directory to `streamlit`
 ```
 cd streamlit
 ```
-6. Run `streamlit`
+
+9. Run `streamlit`
 ```
 streamlit run app.py
 ```
