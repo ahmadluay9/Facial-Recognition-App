@@ -286,9 +286,22 @@ Below is an image of the Streamlit UI.
   
 ## Application Demo
 
-1. Record Attendance
+### 1. Record Attendance
    
 ![Attend-ezgif com-video-to-gif-converter (1)](https://github.com/ahmadluay9/Facial-Recognition-App/assets/123846438/4d9edbe6-0546-4127-b170-4a11143f7cb2)
+
+To record employee attendance:
+
+1. Employees can select either 'attend' for attendance check-in or 'leave' for attendance check-out.
+
+2. Next, employees should click the 'take photo' button.
+
+3. When the 'take a photo' button is clicked, Streamlit will send the data to the API for the model to perform face recognition (`POST /predict/image`) and record the attendance in the database (`POST /attendance`).
+   
+### 2. Register new employee
+
+
+
 
 
    
