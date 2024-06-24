@@ -339,13 +339,13 @@ The next step is to create an end-to-end data pipeline that manages the flow of 
 
 The Facial Recognition Application provides a comprehensive solution for tracking employee attendance using facial recognition technology. The application leverages deep learning models built with TensorFlow, facilitating accurate and efficient employee identification. Key components of the project include:
 
-1. Setup and Structure:
+## 1. Setup and Structure:
 
 - The project is well-structured with clear instructions for setup, including creating a virtual environment, installing dependencies, and running both FastAPI and Streamlit applications.
   
 - The repository contains organized directories for face images, model files, API framework (FastAPI), and data visualization app (Streamlit).
 
-2. Components and Functionality:
+## 2. Components and Functionality:
 
 - FastAPI handles the backend, including database interactions, predictions, and API endpoints.
   
@@ -355,13 +355,13 @@ The Facial Recognition Application provides a comprehensive solution for trackin
   
 - The facial recognition model, stored in HDF5 format, is pre-trained and used for predicting and tracking attendance.
 
-3. Model and Training:
+## 3. Model and Training:
 
 - The model consists of several convolutional and dense layers, designed for high accuracy in facial recognition.
   
 - Training parameters and evaluation metrics indicate a well-performing model with minimal overfitting, as shown by the convergence of training and validation accuracy/loss.
 
-4. Libraries and Tools:
+## 4. Libraries and Tools:
 
 - Key libraries include TensorFlow for model building, OpenCV for image processing, Pandas for data handling, and Matplotlib for data visualization.
   
@@ -370,13 +370,13 @@ The Facial Recognition Application provides a comprehensive solution for trackin
 ---
 # Recommendations
 
-1. Model Optimization:
+## 1. Model Optimization:
 
 - Evaluate the model on a larger, more diverse dataset to ensure robustness and generalization.
 
 - When the dataset grows even bigger, it is important to consider further fine-tuning the model or experimenting with different architectures to enhance performance.
 
-2. Scalability:
+## 2. Scalability:
    
 - As the application scales, consider migrating to a more robust database system like PostgreSQL or MySQL.
 
