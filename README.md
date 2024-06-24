@@ -38,10 +38,13 @@ pip install -r requirements.txt
 ```
 cd fastapi
 ```
-
 ### 7. Run `fastapi` framework
 ```
 uvicorn main:app --reload
+```
+To see the app open web browser and paste this link. 
+```
+http://localhost:8000/docs
 ```
 
 ### 8. Change the directory to `streamlit`
@@ -52,6 +55,10 @@ cd streamlit
 ### 9. Run `streamlit`
 ```
 streamlit run app.py
+```
+To see the app open web browser and paste this link. 
+```
+http://localhost:8501/
 ```
 
 ---
