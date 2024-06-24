@@ -193,6 +193,31 @@ The image shows two plots that evaluate the performance of a Sequential model on
 
 ---
 
+# Database
+
+This project uses SQLite database. There are two tables in this database: the attendance and employee tables.
+
+**Table: Employees**
+
+This table stores information about employees.
+
+- ID: An integer that uniquely identifies each employee.
+- Name: A text field that stores the name of the employee.
+- Position: A text field that stores the job position of the employee.
+- Department: A text field that stores the department in which the employee works.
+- ImageID: A text field that stores an identifier for the employee's image.
+
+**Table: Attendance**
+
+This table tracks the attendance records of employees.
+
+- EmployeeID: An integer that uniquely identifies each employee.
+- EmployeeName: A text field that stores the name of the employee.
+- Date: A text field that stores the date of the attendance record. 
+- CheckInTime:  A text field that stores the check-in time of the employee.
+- CheckOutTime: A text field that stores the check-out time of the employee.
+
+---
 
 
 
