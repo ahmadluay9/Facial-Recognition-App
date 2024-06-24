@@ -101,4 +101,45 @@ Libraries used for this project:
 
 The [dataset](https://vis-www.cs.umass.edu/lfw/) used consists of images of the faces of company employees. There are 15 employees in the dataset, each with multiple images.
 
+## Data Visualization
+- Below are some of the images used for model training.
+![image](https://github.com/ahmadluay9/Facial-Recognition-App/assets/123846438/b667c4ac-9b4a-46af-bb72-baa6af42f5d2)
+
+- Below are the images used to test the model's performance.
+![image](https://github.com/ahmadluay9/Facial-Recognition-App/assets/123846438/1864cbf2-643e-49a5-a7b8-85bec83a2ae8)
+
+# Model Training
+Here are the parameters used to train the model.
+![image](https://github.com/ahmadluay9/Facial-Recognition-App/assets/123846438/a8be9642-14fd-4038-8d33-e70f3ea0e0d7)
+
+1. **conv2d (Conv2D)**, Output Shape: (None, 220, 220, 16), Param #: 1,216
+     
+    - This is a 2D convolutional layer with 16 filters, each of size 3x3 (or another small filter size). The input shape is  224x224 image with the specified stride and padding.
+      
+2. **max_pooling2d (MaxPooling2D)**, Output Shape: (None, 110, 110, 16), Param #: 0
+      
+    - This is a max-pooling layer with a 2x2 pool size, which halves the spatial dimensions of the input (from 220x220 to 110x110) while keeping the number of channels (16) the same. There are no parameters to learn in a pooling layer.
+      
+3. **conv2d_1 (Conv2D)**, Output Shape: (None, 108, 108, 32), Param #: 4,640
+      
+    - Another 2D convolutional layer, this time with 32 filters. The output shape a slight reduction in the spatial dimensions, due to no padding being applied (valid padding).
+  
+4. **max_pooling2d_1 (MaxPooling2D)**, Output Shape: (None, 54, 54, 32), Param #: 0
+
+    - Another max-pooling layer that reduces the spatial dimensions by half again, from 108x108 to 54x54.
+      
+5. **flatten (Flatten)**, Output Shape: (None, 93312), Param #: 0
+
+    - This layer flattens the 3D tensor output from the previous layer into a 1D tensor. The number of elements in the flattened layer is 54 * 54 * 32 = 93312.
+      
+6. **dense (Dense)**, Output Shape: (None, 64), Param #: 5,972,032
+
+    - This is a fully connected (dense) layer with 64 units. The number of parameters is calculated as (93312 + 1) * 64 = 5,972,032, where the additional 1 accounts for the bias term.
+      
+7. **dense_1 (Dense)**, Output Shape: (None, 16), Param #: 1,040
+
+    - Another fully connected layer with 16 units. The number of parameters is (64 + 1) * 16 = 1,040.
+
+
+
 
