@@ -71,9 +71,9 @@ This repository consists of several files :
 
 - `.gitignore`: This file specifies patterns to be ignored by the Git version control system.
 
-- `README.md`: This file likely contains project documentation or instructions.
+- `README.md`: This file contains project documentation or instructions.
 
-- `model_training.ipynb`: This might be a Jupyter notebook for training the facial recognition model.
+- `model_training.ipynb`: This is a Jupyter notebook for training the facial recognition model.
 
 - `requirements.txt`: A file listing the project's dependencies. It is used by pip to install all the necessary packages specified in this file.
 
@@ -96,5 +96,9 @@ Libraries used for this project:
 - **pandas**: This project use pandas for data manipulation, cleaning, and analysis related to attendance tracking.
 
 - **numpy**: This project use numpy for or numerical computations related to the facial recognition model or data analysis tasks.
+
+# Dataset
+
+The [dataset](https://vis-www.cs.umass.edu/lfw/) used consists of images of the faces of company employees. There are 15 employees in the dataset, each with multiple images.
 
 
