@@ -294,9 +294,9 @@ To record employee attendance:
 
 1. Employees can select either 'attend' for attendance check-in or 'leave' for attendance check-out.
 
-2. Next, employees should click the 'take photo' button.
+2. Next, employees should click the 'take photo' button. The photo will be save to the folder `Face Images/Attendance Tracker/`
 
-3. When the 'take a photo' button is clicked, Streamlit will send the data to the API for the model to perform face recognition (`POST /predict/image`) and record the attendance in the Attendance table in the database (`POST /attendance`).
+3. When the 'take a photo' button is clicked, Streamlit will send the data to the server for the model to perform face recognition (`POST /predict/image`) and record the attendance in the Attendance table in the database (`POST /attendance`).
    
 ### 2. Register new employee
 
@@ -308,7 +308,20 @@ To register new employees:
 
 2. Next, employees should take two photos. The first photo will be saved to the folder `Face Images/Train/{ID_Employee_Name}.jpg`, and the second photo will be saved to the folder `Face Images/Test/{ID_Employee_Name}.jpg`. These two photos will be used to retrain the existing model.
 
-3. Finally, employees should click the "Register" button. When the "Register" button is clicked, Streamlit will send the data to the API to add the data to the Employee table in the database (`/POST /register`) and also record the attendance in the Attendance table in the database (`/POST /attendance`).
+3. Finally, employees should click the "Register" button. When the "Register" button is clicked, Streamlit will send the data to the server to add the data to the Employee table in the database (`/POST /register`) and also record the attendance in the Attendance table in the database (`/POST /attendance`).
+
+### 3. Access Database
+
+![Database-ezgif com-crop](https://github.com/ahmadluay9/Facial-Recognition-App/assets/123846438/5d7825b1-4295-4266-9748-22fe68072031)
+
+To access the database:
+
+1. Users can click on the "Database" option and then select either 'Attendance' to check employee attendance or 'Employee' to check employee data.
+
+2. Users should enter Username = '**admin**' and Password = '**admin**' and then click on the 'Login' button.
+
+3. When the 'Login' button is clicked, Streamlit will send a request to the server to retrieve the data requested by the user (`/GET /all_attendance` or `/GET /all_employee`).
+
 
 
 
