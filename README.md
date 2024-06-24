@@ -30,7 +30,6 @@ python -m venv my_env
  ```
 
 ### 5. Install package from requirements.txt
-**For Windows**
 ```bash
 pip install -r requirements.txt
 ```
