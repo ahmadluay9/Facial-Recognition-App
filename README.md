@@ -244,7 +244,25 @@ This table tracks the attendance records of employees.
 - CheckOutTime: A text field that stores the check-out time of the employee.
 
 ---
+# Application
+In this section, a demo of this application will be shown. As explained earlier, this application uses the FastAPI framework and Streamlit.
+
+- **FastAPI**
+  
+Below is an image of the FastAPI Swagger UI.
+![image](https://github.com/ahmadluay9/Facial-Recognition-App/assets/123846438/8a61f6d9-3a37-4c9d-8257-40a0f1ad2dd9)
+
+- **Streamlit**
+  
+Below is an image of the Streamlit UI.
+![image](https://github.com/ahmadluay9/Facial-Recognition-App/assets/123846438/d08d0fd9-cef7-4dbb-9e18-2d46ac018182)
+  
+## Application Demo
+
+1. Record Attendance
+   
+![Attend-ezgif com-video-to-gif-converter (1)](https://github.com/ahmadluay9/Facial-Recognition-App/assets/123846438/4d9edbe6-0546-4127-b170-4a11143f7cb2)
 
 
-
-
+   
+ 
