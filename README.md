@@ -2,6 +2,8 @@
 
 This application helps company track when employees arrive and leave work. This application Utilizes facial recognition technology for employee identification through a trained deep learning model built using TensorFlow. 
 
+---
+
 # File Explanation
 This repository consists of several files :
 ```
@@ -77,6 +79,8 @@ This repository consists of several files :
 
 - `requirements.txt`: A file listing the project's dependencies. It is used by pip to install all the necessary packages specified in this file.
 
+--- 
+
 # Libraries
 
 Libraries used for this project:
@@ -97,6 +101,8 @@ Libraries used for this project:
 
 - **numpy**: This project use numpy for or numerical computations related to the facial recognition model or data analysis tasks.
 
+---
+
 # Dataset
 
 The [dataset](https://vis-www.cs.umass.edu/lfw/) used consists of images of the faces of company employees. There are 15 employees in the dataset, each with multiple images.
@@ -107,6 +113,8 @@ The [dataset](https://vis-www.cs.umass.edu/lfw/) used consists of images of the 
 
 - Below are the images used to test the model's performance.
 ![image](https://github.com/ahmadluay9/Facial-Recognition-App/assets/123846438/1864cbf2-643e-49a5-a7b8-85bec83a2ae8)
+
+---
 
 # Model Training
 Here are the parameters used to train the model.
@@ -139,6 +147,52 @@ Here are the parameters used to train the model.
 7. **dense_1 (Dense)**, Output Shape: (None, 16), Param #: 1,040
 
     - Another fully connected layer with 16 units. The number of parameters is (64 + 1) * 16 = 1,040.
+      
+---
+# Model Evaluation
+
+![image](https://github.com/ahmadluay9/Facial-Recognition-App/assets/123846438/2453bc45-5aa7-4205-9d39-894062a5749f)
+
+The image shows two plots that evaluate the performance of a Sequential model on training and validation data. The left plot displays accuracy over epochs, and the right plot displays loss over epochs.
+
+**Left Plot: Training and Validation Accuracy**
+
+- X-axis: Epochs (training iterations)
+
+- Y-axis: Accuracy
+
+- Blue Line: Training accuracy
+  
+- Orange Line: Validation accuracy
+  
+**interpretation**:
+
+- Initially, both training and validation accuracy are low, indicating that the model is not performing well.
+
+- As the number of epochs increases, both training and validation accuracy improve significantly, showing that the model is learning and generalizing well to the validation data.
+
+- After about 10 epochs, the accuracy for both training and validation stabilizes and reaches a high level (close to 1.0), indicating good model performance with minimal overfitting, as both training and validation accuracy are similar.
+
+**Right Plot: Training and Validation Loss**
+
+- X-axis: Epochs (training iterations)
+
+- Y-axis: Loss
+
+- Blue Line: Training loss
+- 
+- Orange Line: Validation loss
+  
+**interpretation**:
+
+- Initially, the training loss is very high, indicating that the model's predictions are far from the actual values.
+
+- The loss drops rapidly within the first few epochs, showing that the model quickly learns the underlying patterns in the data.
+
+- After about 10 epochs, the training and validation losses converge and remain low, indicating that the model has effectively minimized the error in both training and validation sets.
+
+---
+
 
 
 
