@@ -2,7 +2,6 @@ fastapi
 uvicorn
 streamlit
 apache-airflow
-psycopg2-binary
 tensorflow
 opencv-python
 streamlit-option-menu
