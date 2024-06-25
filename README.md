@@ -323,7 +323,7 @@ To access the database:
 
 # DataOps
 
-The next step is to create an end-to-end data pipeline that manages the flow of data from the source to a facial recognition system and handles the addition of new users or new faces to the system. The pipeline will be built using Apache Airflow. The data pipeline is defined in the `dag.py` file, where Airflow is scheduled to train the model daily.
+The next step is to create an end-to-end data pipeline that manages the flow of data from the source to a facial recognition system and handles the addition of new users or new faces to the system. The pipeline will be built using [Apache Airflow](https://github.com/ahmadluay9/Facial-Recognition-App/tree/main/fastapi/Airflow). The data pipeline is defined in the [`dag.py`](https://github.com/ahmadluay9/Facial-Recognition-App/blob/main/fastapi/Airflow/dags/dag.py) file, where Airflow is scheduled to train the model daily.
 
 ## Airflow 
 ![Screenshot (211)](https://github.com/ahmadluay9/Facial-Recognition-App/assets/123846438/4a9dd674-5e08-48cb-a6a0-1e048536751e)
