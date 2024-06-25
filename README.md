@@ -47,18 +47,22 @@ To see the app open web browser and paste this link.
 http://localhost:8000/docs
 ```
 
-### 8. Change the directory to `streamlit`
-```
-cd streamlit
-```
-
-### 9. Run `streamlit`
+### 8. Run `streamlit`
 ```
 streamlit run app.py
 ```
 To see the app open web browser and paste this link. 
 ```
 http://localhost:8501/
+```
+
+### 9. To Run `Apache Airflow`
+```
+cd fastapi\\Airflow
+```
+Open docker and run this code
+```
+docker-compose -f ./airflow_lite.yaml up -d
 ```
 
 ---
