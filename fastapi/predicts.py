@@ -8,11 +8,11 @@ import pickle
 np.set_printoptions(suppress=True)
 
 # Load the model
-model_path = os.path.join(os.path.dirname(__file__), '../model/model.h5')
+model_path = ('Airflow/models/model.h5')
 model = load_model(model_path, compile=False)
 
 # Load the labels
-label_path = os.path.join(os.path.dirname(__file__), '../Face Images/ResultMap.pkl') #"Face Images/ResultMap.pkl"
+label_path = ('Airflow/data/Face Images/ResultMap.pkl') #"Face Images/ResultMap.pkl"
 
 with open(label_path, 'rb') as file:
     label_map  = pickle.load(file)
