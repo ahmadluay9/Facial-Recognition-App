@@ -323,7 +323,13 @@ To access the database:
 
 # DataOps
 
-The next step is to create an end-to-end data pipeline that manages the flow of data from the source to a facial recognition system and handles the addition of new users or new faces to the system. The pipeline will be built using an orchestration tool like Apache Airflow. However, due to computational constraints, it may be necessary to rerun the model_training.ipynb file.
+The next step is to create an end-to-end data pipeline that manages the flow of data from the source to a facial recognition system and handles the addition of new users or new faces to the system. The pipeline will be built using Apache Airflow. The data pipeline is defined in the `dag.py` file, where Airflow is scheduled to train the model daily.
+
+## Airflow 
+![Screenshot (211)](https://github.com/ahmadluay9/Facial-Recognition-App/assets/123846438/4a9dd674-5e08-48cb-a6a0-1e048536751e)
+
+## Logs
+![Screenshot (212)](https://github.com/ahmadluay9/Facial-Recognition-App/assets/123846438/2bab75c8-7974-48b4-a005-9ed9b7454de8)
 
 ---
 # Conclusion
