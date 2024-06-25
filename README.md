@@ -66,48 +66,35 @@ http://localhost:8501/
 # File Explanation
 This repository consists of several files :
 ```
-    ┌── Face Images/
-            ├── Attendance Tracker/
-                ├── Attend/
-                ├── Leave/
-            ├── Test/
-            ├── Train/
-            └── ResultMap.pkl
-    ├── fastapi/
+    ┌── fastapi/
+            ├── Airflow/
             ├── attendance.db
             ├── database.ipynb
             ├── database.py
             ├── main.py
             └── predict.py
-    ├── model/
-            └── model.h5
-    ├── streamlit/
-            ├── app.py
-            └── utils.py
     ├── .gitignore
     ├── README.md
+    ├── app.py
     ├── model_training.ipynb
-    └── requirements.txt
+    ├── requirements.txt
+    └── utils.py
 
 ```
 ## Folders
 
 - `Face Images/`: This folder stores images of faces, used for training a facial recognition model or for attendance purposes.
-  
-    - `Attendance Tracker/`: This subfolder hold data related to attendance tracking, containing:
-      
-          - Attend/: This subfolder contain images captured during attendance registration or clock-in.
-      
-          - Leave/: This subfolder contain images captured during attendance deregistration or clock-out.
-      
-    - `Test/`: This folder hold images used for testing the facial recognition model's performance.
- 
-    - `Train/`: This most likely stores images used to train the facial recognition model.
-
-    - `ResultMap.pkl`: This file ontain mappings of employee face IDs, stored using Python's pickle module.
       
 - `fastapi/`: This folder contains codes for FastAPI web framework.
   
+    - `Airflow\`: various subdirectories and files essential for configuring, running, and managing Airflow workflows (DAGs - Directed Acyclic Graphs).
+      
+       - `dags/`: This directory contains the DAG files.
+     
+       - `data/Face Images`: This folder stores images of faces, used for training a facial recognition model or for attendance purposes.
+     
+       - `models/`: This folder holds the trained facial recognition model
+      
     - `attendance.db`: This file is the database used by the application, used for storing attendance data.
       
     - `database.ipynb`: This is a Jupyter notebook for interacting with the attendance database.
